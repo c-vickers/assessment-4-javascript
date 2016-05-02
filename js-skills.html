@@ -308,7 +308,16 @@ form.addEventListener('submit', stopSubmit);
 </fieldset>
 
 <script>
-  // put your code here
+  function pausePorcupine() {
+    setTimeout(enterPorcupine, 1000);
+  }
+
+  function enterPorcupine() {
+    $("#cute-porcupine-image").show().fadeOut(2000);
+  }
+
+  $("#make-a-porcupine").click(pausePorcupine);
+
 </script>
 
 <div class="hint">
